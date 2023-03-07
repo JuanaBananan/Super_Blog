@@ -64,8 +64,8 @@ class Comment(db.Model):
     Post_child = relationship("BlogPost", back_populates="comment_rel")
 
 
-with app.app_context():
-    db.create_all()
+#with app.app_context():
+#    db.create_all()
 
 
 gravatar = Gravatar(app,
